@@ -1,4 +1,5 @@
 //https://bank.gov.ua/NBU_ovdp?date=29.08.2023&val_code=UAH&json
+
 const fs = require("node:fs");
 
 fs.readFile("data.json", (readErr, data) => {
