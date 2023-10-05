@@ -4,7 +4,7 @@ fs.readFile("data.json", (readErr, data) => {
     if (readErr == null) {
         const jsondata = JSON.parse(data.toString());
 
-        fs.open("oldoutput.txt", "a", (openErr, fd) => {
+        fs.open("output.txt", "a", (openErr, fd) => {
             if (openErr != null) {
                 console.log("Error occurred while opening file:", openErr);
                 return;
