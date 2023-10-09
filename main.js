@@ -9,7 +9,7 @@ fs.readFile("data.json", (readErr, data) => {
                 console.log("Error occurred while opening file:", openErr);
                 return;
             }
-
+            
             function writeNext(index) {
                 if (index < jsondata.length) {
                     const jsonstring = jsondata[index].StockCode + "-" + jsondata[index].ValCode + "-" + jsondata[index].Attraction + "\n";
